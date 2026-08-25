@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
