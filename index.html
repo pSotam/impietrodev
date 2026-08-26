@@ -5,70 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>impietrodev</title>
+    <title>impietrodev — Pietro</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- =========================
+         HEADER
+         ========================= -->
+
     <header>
-        <p>impietrodev</p>
+
+        <a href="#home" class="logo">
+            impietrodev<span>.</span>
+        </a>
 
         <nav>
-            <a href="#home">Home</a>
-            <a href="#interests">Interesses</a>
-            <a href="#currently">Atualmente</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contato</a>
+            <a href="#about">about</a>
+            <a href="#interests">interests</a>
+            <a href="#currently">now</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
         </nav>
+
     </header>
 
 
     <main>
 
-        <!-- HOME -->
+        <!-- =========================
+             HOME
+             ========================= -->
 
-        <section id="home">
+        <section id="home" class="hero">
 
-            <div class="home-layout">
+            <div class="hero-content">
 
-                <!-- PERFIL -->
+                <p class="eyebrow">
+                    <span class="status"></span>
+                    online / somewhere in brazil
+                </p>
 
-                <div class="profile-card">
+                <h1>
+                    Oi, eu sou
+                    <span>Pietro.</span>
+                </h1>
 
-                    <img src="images/pietro.png" alt="Foto de Pietro">
+                <p class="subtitle">
+                    estudante / desenvolvedor / músico / nerd
+                </p>
 
-                    <h1>Pietro</h1>
+                <p class="intro">
+                    Um pequeno canto da internet onde guardo
+                    projetos, interesses, ideias e algumas coisas
+                    que estou aprendendo pelo caminho.
+                </p>
 
-                    <h2>@impietro.dev</h2>
+                <div class="hero-links">
 
-                    <p class="tagline">
-                        | estudante / desenvolvedor / músico / nerd |
+                    <a href="#about">
+                        <span>01</span>
+                        sobre mim
+                    </a>
+
+                    <a href="#projects">
+                        <span>02</span>
+                        meus projetos
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-label">
+                    / pietro.png
+                </div>
+
+                <img src="images/pietro.png" alt="Foto de Pietro">
+
+                <div class="image-info">
+                    <span>impietro.dev</span>
+                    <span>2026</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+             ========================= -->
+
+        <section id="about" class="section">
+
+            <div class="section-header">
+
+                <span class="section-number">01</span>
+
+                <div>
+                    <p class="section-label">about</p>
+                    <h2>Sobre mim</h2>
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        Opa, eu sou o Pietro. Sou um estudante brasileiro
+                        que gosta muito de tecnologia, programação, música
+                        e artes em geral.
                     </p>
 
-                    <div class="home-links">
-                        <a href="#projects">Meus projetos</a>
-                    </div>
+                    <p>
+                        Comecei a programar por curiosidade e, desde então,
+                        venho aprendendo e criando pequenas coisas por conta
+                        própria.
+                    </p>
+
+                    <p>
+                        Esse site é basicamente meu pequeno espaço na internet.
+                        Não é exatamente um currículo, nem uma empresa.
+                        É só um lugar para deixar registrado o que eu faço,
+                        o que eu gosto e o que estou aprendendo.
+                    </p>
 
                 </div>
 
 
-                <!-- SOBRE MIM -->
+                <div class="about-meta">
 
-                <div class="home-about" id="about">
+                    <div>
+                        <span>nome</span>
+                        <strong>Pietro</strong>
+                    </div>
 
-                    <h2>Sobre mim</h2>
+                    <div>
+                        <span>país</span>
+                        <strong>Brasil</strong>
+                    </div>
 
-                    <p>
-                        Opa, eu sou o Pietro. Sou um estudante do Brasil que gosta
-                        MUITO de tecnologia, programação, música e artes em geral.
-                    </p>
+                    <div>
+                        <span>interesses</span>
+                        <strong>tecnologia + artes</strong>
+                    </div>
 
-                    <p>
-                        Esse é meu pequeno canto da internet onde eu guardo algumas
-                        coisas que eu tenho trabalhado e outras que eu gosto :).
-                    </p>
+                    <div>
+                        <span>status</span>
+                        <strong>aprendendo...</strong>
+                    </div>
 
                 </div>
 
@@ -77,80 +171,251 @@
         </section>
 
 
-        <!-- INTERESSES -->
+        <!-- =========================
+             INTERESTS
+             ========================= -->
 
-        <section id="interests">
+        <section id="interests" class="section">
 
-            <h2>Coisas que eu gosto</h2>
+            <div class="section-header">
 
-            <ul>
-                <li>Programação</li>
-                <li>Tecnologia</li>
-                <li>Jogos</li>
-                <li>Teatro</li>
-                <li>Música</li>
-            </ul>
+                <span class="section-number">02</span>
+
+                <div>
+                    <p class="section-label">interests</p>
+                    <h2>Coisas que eu gosto</h2>
+                </div>
+
+            </div>
+
+
+            <div class="interest-list">
+
+                <div class="interest-item">
+                    <span>01</span>
+                    <h3>Programação</h3>
+                    <p>Python, web e pequenas automações.</p>
+                </div>
+
+                <div class="interest-item">
+                    <span>02</span>
+                    <h3>Tecnologia</h3>
+                    <p>Computadores, software e tudo que envolve tecnologia.</p>
+                </div>
+
+                <div class="interest-item">
+                    <span>03</span>
+                    <h3>Jogos</h3>
+                    <p>Jogos fazem parte da minha relação com tecnologia.</p>
+                </div>
+
+                <div class="interest-item">
+                    <span>04</span>
+                    <h3>Teatro</h3>
+                    <p>Uma das formas de arte que mais gosto de experimentar.</p>
+                </div>
+
+                <div class="interest-item">
+                    <span>05</span>
+                    <h3>Música</h3>
+                    <p>Guitarra, canto e descobrir músicas novas.</p>
+                </div>
+
+            </div>
 
         </section>
 
 
-        <!-- ATUALMENTE -->
+        <!-- =========================
+             CURRENTLY
+             ========================= -->
 
-        <section id="currently">
+        <section id="currently" class="section now-section">
 
-            <h2>Atualmente - 2026</h2>
+            <div class="section-header">
 
-            <p>Estudando programação</p>
-            <p>Desenvolvendo meus próprios projetos</p>
-            <p>Tocando guitarra ou cantando</p>
-            <p>Estudando para vestibular</p>
+                <span class="section-number">03</span>
+
+                <div>
+                    <p class="section-label">now</p>
+                    <h2>Atualmente</h2>
+                </div>
+
+            </div>
+
+
+            <div class="now-container">
+
+                <div class="now-terminal">
+
+                    <div class="terminal-top">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <div class="terminal-content">
+
+                        <p>
+                            <span class="terminal-symbol">$</span>
+                            cat currently.txt
+                        </p>
+
+                        <p class="terminal-output">
+                            2026
+                        </p>
+
+                        <p class="terminal-output">
+                            → estudando programação
+                        </p>
+
+                        <p class="terminal-output">
+                            → desenvolvendo meus próprios projetos
+                        </p>
+
+                        <p class="terminal-output">
+                            → tocando guitarra / cantando
+                        </p>
+
+                        <p class="terminal-output">
+                            → estudando para vestibular
+                        </p>
+
+                        <p class="terminal-cursor">
+                            █
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
 
-        <!-- PROJETOS -->
+        <!-- =========================
+             PROJECTS
+             ========================= -->
 
-        <section id="projects">
+        <section id="projects" class="section">
 
-            <h2>Projetos</h2>
+            <div class="section-header">
 
-            <article>
+                <span class="section-number">04</span>
 
-                <h3>Meu primeiro projeto</h3>
+                <div>
+                    <p class="section-label">projects</p>
+                    <h2>Coisas que estou construindo</h2>
+                </div>
+
+            </div>
+
+
+            <div class="projects-list">
+
+                <article class="project">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Meu primeiro projeto</h3>
+
+                        <p>
+                            Um projeto criado enquanto eu aprendia
+                            programação e começava a transformar ideias
+                            em coisas reais.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>python</span>
+                            <span>learning</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-arrow">
+                        →
+                    </div>
+
+                </article>
+
+
+                <!--
+                Quando você tiver outros projetos,
+                basta duplicar um article como este.
+                -->
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+             ========================= -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="section-header">
+
+                <span class="section-number">05</span>
+
+                <div>
+                    <p class="section-label">contact</p>
+                    <h2>Vamos conversar</h2>
+                </div>
+
+            </div>
+
+
+            <div class="contact-content">
 
                 <p>
-                    Descrição do projeto.
+                    Se quiser acompanhar o que eu faço,
+                    você pode me encontrar por aqui:
                 </p>
 
-            </article>
+                <div class="contact-links">
 
-        </section>
+                    <a href="https://www.instagram.com/impietro.dev/" target="_blank">
+                        Instagram
+                        <span>↗</span>
+                    </a>
 
+                    <a href="https://github.com/pSotam" target="_blank">
+                        GitHub
+                        <span>↗</span>
+                    </a>
 
-        <!-- CONTATO -->
+                </div>
 
-        <section id="contact">
-
-            <h2>Contato</h2>
-
-            <p>Você pode me encontrar em:</p>
-
-            <a href="https://www.instagram.com/impietro.dev/">
-                Instagram
-            </a>
-
-            <a href="https://github.com/pSotam">
-                Github
-            </a>
+            </div>
 
         </section>
 
     </main>
 
 
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
     <footer>
 
-        <p>© 2026 Pietro</p>
+        <p>
+            © 2026 Pietro
+        </p>
+
+        <p>
+            feito por mim, do zero.
+        </p>
 
     </footer>
 
