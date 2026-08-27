@@ -633,14 +633,14 @@ main {
 .project-arrow {
     color: var(--muted);
 
-    font-size: 20px;
+    font-size: 40px;
 
     transition:
         color 0.2s ease,
         transform 0.2s ease;
 }
 
-.project:hover .project-arrow {
+.project-arrow:hover {
     color: var(--purple);
 
     transform: translate(5px, -5px);
