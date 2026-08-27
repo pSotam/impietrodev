@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>impietrodev — Pietro</title>
+    <title>impietrodev.</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,17 +18,31 @@
 
     <header>
 
-        <a href="#home" class="logo">
-            impietrodev<span>.</span>
-        </a>
+        <p class="logo">impietrodev.</p>
 
-        <nav>
-            <a href="#about">Sobre</a>
-            <a href="#interests">Interesses</a>
-            <a href="#currently">Atualmente</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contato</a>
-        </nav>
+        <div class="header-right">
+
+            <nav>
+                <a href="#home" data-pt="início" data-en="home">início</a>
+                <a href="#about" data-pt="sobre" data-en="about">sobre</a>
+                <a href="#interests" data-pt="interesses" data-en="interests">interesses</a>
+                <a href="#currently" data-pt="agora" data-en="now">agora</a>
+                <a href="#projects" data-pt="projetos" data-en="projects">projetos</a>
+                <a href="#contact" data-pt="contato" data-en="contact">contato</a>
+            </nav>
+
+            <button
+                id="language-toggle"
+                class="language-toggle"
+                type="button"
+                aria-label="Trocar idioma"
+            >
+                <span class="language-pt">PT</span>
+                <span class="language-separator">/</span>
+                <span class="language-en">EN</span>
+            </button>
+
+        </div>
 
     </header>
 
@@ -45,34 +59,62 @@
 
                 <p class="eyebrow">
                     <span class="status"></span>
-                    online / somewhere in Brazil - São Paulo
+                    <span
+                        data-pt="online / em algum lugar de São Paulo - Brasil"
+                        data-en="online / somewhere in São Paulo - Brazil"
+                    >
+                        online / em algum lugar de São Paulo - Brasil
+                    </span>
                 </p>
 
                 <h1>
-                    Oi, eu sou
+                    <span
+                        data-pt="Oi, eu sou"
+                        data-en="Hi, I'm"
+                    >
+                        Oi, eu sou
+                    </span>
+
                     <span>Pietro.</span>
                 </h1>
 
-                <p class="subtitle">
+                <p
+                    class="subtitle"
+                    data-pt="estudante / desenvolvedor / músico / nerd"
+                    data-en="student / developer / musician / nerd"
+                >
                     estudante / desenvolvedor / músico / nerd
                 </p>
 
-                <p class="intro">
-                    Um pequeno canto da internet onde guardo
-                    projetos, interesses, ideias e algumas coisas
-                    que estou aprendendo pelo caminho.
+                <p
+                    class="intro"
+                    data-pt="Um pequeno canto da internet onde guardo projetos, interesses, ideias e algumas coisas que estou aprendendo pelo caminho."
+                    data-en="My little corner of the internet where I keep projects, interests, ideas and some things I'm learning along the way."
+                >
+                    Um pequeno canto da internet onde guardo projetos, interesses,
+                    ideias e algumas coisas que estou aprendendo pelo caminho.
                 </p>
 
                 <div class="hero-links">
 
                     <a href="#about">
                         <span>01</span>
-                        sobre mim
+                        <span
+                            data-pt="sobre mim"
+                            data-en="about me"
+                        >
+                            sobre mim
+                        </span>
                     </a>
 
                     <a href="#projects">
                         <span>02</span>
-                        meus projetos
+                        <span
+                            data-pt="meus projetos"
+                            data-en="my projects"
+                        >
+                            meus projetos
+                        </span>
                     </a>
 
                 </div>
@@ -86,7 +128,12 @@
                     / pietro.png
                 </div>
 
-                <img src="images/pietro.png" alt="Foto de Pietro">
+                <img
+                    src="images/pietro.png"
+                    alt="Foto de Pietro"
+                    data-alt-pt="Foto de Pietro"
+                    data-alt-en="Photo of Pietro"
+                >
 
                 <div class="image-info">
                     <span>impietro.dev</span>
@@ -110,7 +157,13 @@
 
                 <div>
                     <p class="section-label">about</p>
-                    <h2>Sobre mim</h2>
+
+                    <h2
+                        data-pt="Sobre mim"
+                        data-en="About me"
+                    >
+                        Sobre mim
+                    </h2>
                 </div>
 
             </div>
@@ -120,19 +173,28 @@
 
                 <div class="about-text">
 
-                    <p>
+                    <p
+                        data-pt="Opa, eu sou o Pietro. Sou um estudante brasileiro que gosta muito de tecnologia, programação, música e cultura nerd."
+                        data-en="Yo, I'm Pietro. I'm a Brazilian student who really likes technology, programming, music and nerd culture."
+                    >
                         Opa, eu sou o Pietro. Sou um estudante brasileiro
                         que gosta muito de tecnologia, programação, música
                         e cultura nerd.
                     </p>
 
-                    <p>
+                    <p
+                        data-pt="Comecei a programar por curiosidade e, desde então, venho aprendendo e criando pequenas coisas por conta própria."
+                        data-en="I started coding out of curiosity and, since then, I've been learning and creating small things on my own."
+                    >
                         Comecei a programar por curiosidade e, desde então,
                         venho aprendendo e criando pequenas coisas por conta
                         própria.
                     </p>
 
-                    <p>
+                    <p
+                        data-pt="Esse site é basicamente meu pequeno espaço na internet. Não é exatamente um currículo, nem uma empresa. É só um lugar para deixar registrado o que eu faço, o que eu gosto, quem eu sou e o que estou aprendendo."
+                        data-en="This website is basically my little corner of the internet. It's not exactly a resume, nor a company. It's simply a place to document what I do, what I like, who I am and what I'm learning."
+                    >
                         Esse site é basicamente meu pequeno espaço na internet.
                         Não é exatamente um currículo, nem uma empresa.
                         É só um lugar para deixar registrado o que eu faço,
@@ -145,23 +207,57 @@
                 <div class="about-meta">
 
                     <div>
-                        <span>nome</span>
+                        <span
+                            data-pt="nome"
+                            data-en="name"
+                        >
+                            nome
+                        </span>
+
                         <strong>PIETRO</strong>
                     </div>
 
                     <div>
-                        <span>país</span>
-                        <strong>BRASIL</strong>
+                        <span
+                            data-pt="país"
+                            data-en="country"
+                        >
+                            país
+                        </span>
+
+                        <strong
+                            data-pt="BRASIL"
+                            data-en="BRAZIL"
+                        >
+                            BRASIL
+                        </strong>
                     </div>
 
                     <div>
-                        <span>interesses</span>
-                        <strong>TECNOLOGIA / MÚSICA</strong>
+                        <span
+                            data-pt="interesses"
+                            data-en="interests"
+                        >
+                            interesses
+                        </span>
+
+                        <strong
+                            data-pt="TECNOLOGIA / MÚSICA"
+                            data-en="TECHNOLOGY / MUSIC"
+                        >
+                            TECNOLOGIA / MÚSICA
+                        </strong>
                     </div>
 
                     <div>
                         <span>status</span>
-                        <strong>APRENDENDO...</strong>
+
+                        <strong
+                            data-pt="APRENDENDO..."
+                            data-en="LEARNING..."
+                        >
+                            APRENDENDO...
+                        </strong>
                     </div>
 
                 </div>
@@ -183,7 +279,13 @@
 
                 <div>
                     <p class="section-label">interests</p>
-                    <h2>Coisas que eu gosto</h2>
+
+                    <h2
+                        data-pt="Coisas que eu gosto"
+                        data-en="Things I like"
+                    >
+                        Coisas que eu gosto
+                    </h2>
                 </div>
 
             </div>
@@ -192,28 +294,87 @@
             <div class="interest-list">
 
                 <div class="interest-item">
+
                     <span>01</span>
-                    <h3>Programação</h3>
-                    <p>Python, web e pequenas automações.</p>
+
+                    <h3
+                        data-pt="Programação"
+                        data-en="Programming"
+                    >
+                        Programação
+                    </h3>
+
+                    <p
+                        data-pt="Python, web e pequenas automações."
+                        data-en="Python, web and small automations."
+                    >
+                        Python, web e pequenas automações.
+                    </p>
+
                 </div>
 
+
                 <div class="interest-item">
+
                     <span>02</span>
-                    <h3>Tecnologia</h3>
-                    <p>Computadores, software e tudo que envolve tecnologia.</p>
+
+                    <h3
+                        data-pt="Tecnologia"
+                        data-en="Technology"
+                    >
+                        Tecnologia
+                    </h3>
+
+                    <p
+                        data-pt="Computadores, software e tudo que envolve tecnologia."
+                        data-en="Computers, software and everything related to technology."
+                    >
+                        Computadores, software e tudo que envolve tecnologia.
+                    </p>
+
                 </div>
 
+
                 <div class="interest-item">
+
                     <span>03</span>
-                    <h3>Cultura nerd</h3>
-                    <p>Jogos, séries, filmes e tudo que é considerado "nerd" faz parte da minha relação 
-                        com tecnologia.</p>
+
+                    <h3
+                        data-pt="Cultura nerd"
+                        data-en="Nerd culture"
+                    >
+                        Cultura nerd
+                    </h3>
+
+                    <p
+                        data-pt="Jogos, séries, filmes e tudo que é considerado nerd faz parte da minha relação com tecnologia."
+                        data-en="Games, TV shows, movies and everything considered nerd are part of my relationship with technology."
+                    >
+                        Jogos, séries, filmes e tudo que é considerado
+                        nerd faz parte da minha relação com tecnologia.
+                    </p>
+
                 </div>
 
+
                 <div class="interest-item">
-                    <span>05</span>
-                    <h3>Música</h3>
-                    <p>Guitarra, canto e descobrir músicas novas.</p>
+
+                    <span>04</span>
+
+                    <h3
+                        data-pt="Música"
+                        data-en="Music"
+                    >
+                        Música
+                    </h3>
+
+                    <p
+                        data-pt="Guitarra, canto e descobrir músicas novas."
+                        data-en="Guitar, singing and discovering new music."
+                    >
+                        Guitarra, canto e descobrir músicas novas.
+                    </p>
+
                 </div>
 
             </div>
@@ -233,7 +394,13 @@
 
                 <div>
                     <p class="section-label">now</p>
-                    <h2>Atualmente</h2>
+
+                    <h2
+                        data-pt="Atualmente"
+                        data-en="Currently"
+                    >
+                        Atualmente
+                    </h2>
                 </div>
 
             </div>
@@ -251,6 +418,7 @@
 
                     </div>
 
+
                     <div class="terminal-content">
 
                         <p>
@@ -262,19 +430,35 @@
                             2026
                         </p>
 
-                        <p class="terminal-output">
+                        <p
+                            class="terminal-output"
+                            data-pt="→ estudando programação"
+                            data-en="→ studying programming"
+                        >
                             → estudando programação
                         </p>
 
-                        <p class="terminal-output">
+                        <p
+                            class="terminal-output"
+                            data-pt="→ desenvolvendo meus próprios projetos"
+                            data-en="→ developing my own projects"
+                        >
                             → desenvolvendo meus próprios projetos
                         </p>
 
-                        <p class="terminal-output">
+                        <p
+                            class="terminal-output"
+                            data-pt="→ tocando guitarra / cantando"
+                            data-en="→ playing guitar / singing"
+                        >
                             → tocando guitarra / cantando
                         </p>
 
-                        <p class="terminal-output">
+                        <p
+                            class="terminal-output"
+                            data-pt="→ estudando para vestibular"
+                            data-en="→ studying for college entrance exams"
+                        >
                             → estudando para vestibular
                         </p>
 
@@ -303,7 +487,13 @@
 
                 <div>
                     <p class="section-label">projects</p>
-                    <h2>Coisas que estou construindo</h2>
+
+                    <h2
+                        data-pt="Coisas que estou construindo"
+                        data-en="Things I'm building"
+                    >
+                        Coisas que estou construindo
+                    </h2>
                 </div>
 
             </div>
@@ -319,20 +509,37 @@
 
                     <div class="project-content">
 
-                        <h3>FILTRO DE SKUs</h3>
+                        <h3
+                            data-pt="FILTRO DE SKUs"
+                            data-en="SKU FILTER"
+                        >
+                            FILTRO DE SKUs
+                        </h3>
 
-                        <p>
+                        <p
+                            data-pt="Um projeto criado para me ajudar no meu trabalho. Adiciono SKUs sem estoque e ele me gera uma lista de itens para serem reabastecidos."
+                            data-en="A project I created to help me at work. I add out-of-stock SKUs and it generates a list of items that need to be restocked."
+                        >
                             Um projeto criado para me ajudar no meu trabalho.
                             Adiciono SKUs sem estoque e ele me gera uma lista
                             de itens para serem reabastecidos.
                         </p>
 
                         <div class="project-tags">
+
                             <span>python</span>
-                            <span>automação</span>
+
+                            <span
+                                data-pt="automação"
+                                data-en="automation"
+                            >
+                                automação
+                            </span>
+
                         </div>
 
                     </div>
+
 
                     <a
                         href="https://github.com/pSotam/SKUs-automatico"
@@ -345,13 +552,6 @@
                     </a>
 
                 </article>
-
-
-                <!--
-                Quando você tiver outros projetos,
-                basta duplicar um article como este.
-                -->
-
 
             </div>
 
@@ -370,7 +570,13 @@
 
                 <div>
                     <p class="section-label">contact</p>
-                    <h2>Vamos conversar</h2>
+
+                    <h2
+                        data-pt="Vamos conversar"
+                        data-en="Let's talk"
+                    >
+                        Vamos conversar
+                    </h2>
                 </div>
 
             </div>
@@ -378,19 +584,31 @@
 
             <div class="contact-content">
 
-                <p>
+                <p
+                    data-pt="Se quiser acompanhar o que eu faço, você pode me encontrar por aqui:"
+                    data-en="If you want to follow what I'm doing, you can find me here:"
+                >
                     Se quiser acompanhar o que eu faço,
                     você pode me encontrar por aqui:
                 </p>
 
+
                 <div class="contact-links">
 
-                    <a href="https://www.instagram.com/impietro.dev/" target="_blank">
+                    <a
+                        href="https://www.instagram.com/impietro.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Instagram
                         <span>↗</span>
                     </a>
 
-                    <a href="https://github.com/pSotam" target="_blank">
+                    <a
+                        href="https://github.com/pSotam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         GitHub
                         <span>↗</span>
                     </a>
@@ -414,11 +632,17 @@
             © 2026 Pietro
         </p>
 
-        <p>
+        <p
+            data-pt="feito por mim, do zero."
+            data-en="made by me, from scratch."
+        >
             feito por mim, do zero.
         </p>
 
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 
